@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
     background-color: black;
 }
 
-.inteface {
+.interface {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -18,8 +19,38 @@ header {
     padding: 40px 0;
 }
 
-header .inteface {
+header .interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-items: center;
+}
+
+header .logo img{
+    width: 50px;
+}
+
+header .menuDesktop nav ul{
+    list-style-type: none;
+}
+
+header .menuDesktop nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .menuDesktop nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+header .btn-contato button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
 }
