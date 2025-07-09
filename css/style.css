@@ -40,10 +40,16 @@ header .menuDesktop nav ul li {
 }
 
 header .menuDesktop nav ul li a {
+    display: inline-block;
     text-decoration: none;
     color: white;
-    font-weight: 500;
 }
+
+.menuDesktop nav a:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
 
 header .btn-contato button{
     width: 140px;
@@ -53,4 +59,10 @@ header .btn-contato button{
     border: 1px solid white;
     color: white;
     cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
 }
