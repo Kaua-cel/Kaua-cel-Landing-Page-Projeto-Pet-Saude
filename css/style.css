@@ -20,6 +20,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    transform: .5s;
+    z-index: 5;
 }
 
 header .interface {
@@ -31,6 +33,38 @@ header .interface {
 
 header .logo img{
     width: 50px;
+}
+
+header .logo img.logo-black{
+    display: none;
+}
+
+header.rolar{
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 0 8px #00000061;
+}
+
+header.rolar .menuDesktop nav ul li a{
+    color: #000;
+}
+
+header.rolar .btn-contato button{
+    border: 1px solid black;
+    color: #000;
+}
+
+header.rolar .btn-contato button:hover{
+    background-color: #000;
+    color: white;
+}
+
+header.rolar .logo .logo-white{
+    display: none;
+}
+
+header.rolar .logo .logo-black{
+    display: block;
 }
 
 header .menuDesktop nav ul{
@@ -72,7 +106,7 @@ header .btn-contato button:hover {
 
 section.hero-site{
     height: 98vh;
-    background-image: url(/images/atendimentoClinica2.png);
+    background-image: url(/images/atendimentoClinica.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -216,3 +250,153 @@ section.operation{
     font-size: 18px;
     line-height: 20px;
 }
+
+section.section-impact{
+    height: 500px;
+    background-image: url(/images/equipeMedica.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section-impact > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.section-impact h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.section-impact h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.section-impact p{
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+section.benefits{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.benefits .benefits-title h3{
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.benefits .benefits-title h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.benefits .benefits-box{
+    text-align: right;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+section.contato{
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.txt-contato, .icons-contatos{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons-contatos a{
+    text-decoration: none;
+}
+
+.contato .icons-contatos button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contato .icons-contatos button i{
+    font-size: 20px;
+
+}
+
+.contato .icons-contatos button:hover{
+    background-color: #000;
+}
+
+.contato .icons-contatos button:hover i, .contato .icons-contatos button:hover p{
+    color: #fff;
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .top-footer a{
+    color: #fff;
+    margin: 0 15px;
+}
+
+footer .top-footer{
+    margin-bottom: 10px;
+}
+
+footer .bottom-footer{
+    border-top: 2px solid #fff;
+}
+
+footer .bottom-footer p{
+    color: #fff;
+    margin-top: 10px;
+}
+
