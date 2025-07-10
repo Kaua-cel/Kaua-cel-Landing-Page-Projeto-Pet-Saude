@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .interface {
@@ -17,6 +17,9 @@ body {
 header {
     width: 100%;
     padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 header .interface {
@@ -56,7 +59,7 @@ header .btn-contato button{
     height: 50px;
     font-size: 18px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid rgb(221, 221, 221);
     color: white;
     cursor: pointer;
 }
@@ -65,4 +68,40 @@ header .btn-contato button:hover {
     background-color: white;
     color: black;
     transition: .5s;
+}
+
+section.hero-site{
+    height: 98vh;
+    background-image: url(/images/atendimentoClinica2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .hero-text h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.hero-site .hero-text span{
+    display: block;
+    font-weight: 800;
+}
+
+.hero-site .hero-text p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero-site .hero-text p span{
+    display: block;
 }
