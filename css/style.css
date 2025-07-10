@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #e3e3e3;
 }
 
 .interface {
@@ -105,3 +105,65 @@ section.hero-site{
 .hero-site .hero-text p span{
     display: block;
 }
+
+section.section-about{
+    padding: 80px 0;
+}
+
+.section-about .itens-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.section-about .itens-section .img-itens img{
+    max-width: 420px;
+}
+
+.section-about .itens-section .txt-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+section.section-challenges{
+    height: 500px;
+    background-image: url(/images/hospital.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section-challenges > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.section-challenges h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.section-challenges h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.section-challenges p{
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+
